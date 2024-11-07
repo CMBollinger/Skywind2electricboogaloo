@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Magic_Cards";
+    src: url(./Magic_Cards/MAGIC_CA.ttf) format('truetype');
+}
+
+
+
+/* Header Styles */
+
+header {
+    display: block;
+    min-width: 320px;
+    max-width: 1024px;
+    background-color: #CD9E99;
+}
+
+header > h1 {
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+    }
+
+/* Main Content Styles */
+
+  html {
+    background-color: #28210f;
+    background-image: url(./Images/Gallery_ot710.png);
+       }
+    
+ body {
+    background-color: #AE785C;
+    color: #28210F;
+    margin: 0px auto;
+    min-height: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    width: 100%;
+}
+
+
+h1, h2, h3 {
+    font-family: "Magic_Cards";
+    padding-left: 15px;
+}
+
+p {
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+/* Nav Styles */
+
+a {
+    text-decoration: none;
+    color: #28210F;
+    color: lightgray;
+}
+
+a:hover, a:active {
+    color: burlywood;
+}
+
+
+ul {
+list-style-type: none;
+}
+
+/* Grid Styles */
+#grid {
+    display: grid;
+    width: 100%;
+    height: 1080px;
+    grid-template-areas: 
+     "n c c"
+     "b b g";
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 90px 1fr;
+    border: 2px solid black;
+}
+
+#grid > section.gallery {
+    grid-area: g;
+    border: 2px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+#grid > section.nav {
+    grid-area: n;
+    border: 2px solid black;
+}
+
+#grid > section.paragraphs {
+    grid-area: b;
+    border: 2px solid black;
+}
+
+#grid > section.countdown {
+    grid-area: c;
+    border: 2px solid black;
+}
+
+img {
+    width: 95%;
+    padding: 12px;
+}
+
+/* Footer Styles */
+
+footer#socials {
+    background-color: #CD9E99;
+    display: flex;
+    clear: both;
+    content: "";
+    height: 84px;
+    justify-content: space-evenly;
+}
+
+footer#socials img {
+    height: 48px;
+    width: 48px;
+    padding-top: 24px;
+}
