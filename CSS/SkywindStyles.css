@@ -24,7 +24,7 @@ header > h1 {
 
   html {
     background-color: #28210f;
-    background-image: url(./Images/Gallery_ot710.png);
+    background-image: url(../Images/Gallery_ot710.png);
        }
     
  body {
@@ -46,7 +46,7 @@ h1, h2, h3 {
 p {
     padding-left: 20px;
     padding-right: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 /* Nav Styles */
@@ -66,39 +66,38 @@ ul {
 list-style-type: none;
 }
 
+ul li {
+    padding-top: 25px;
+}
+
 /* Grid Styles */
 #grid {
     display: grid;
     width: 100%;
     height: 1080px;
     grid-template-areas: 
-     "n c c"
-     "b b g";
-    grid-template-columns: 1fr 1fr 2fr;
+     "c c c c"
+     "n b b g";
+    grid-template-columns: 1fr 1fr 1fr 3fr;
     grid-template-rows: 90px 1fr;
-    border: 2px solid black;
 }
 
 #grid > section.gallery {
     grid-area: g;
-    border: 2px solid black;
     padding: 0px;
     margin: 0px;
 }
 
 #grid > section.nav {
     grid-area: n;
-    border: 2px solid black;
 }
 
 #grid > section.paragraphs {
     grid-area: b;
-    border: 2px solid black;
 }
 
-#grid > section.countdown {
+#grid > section#countdown {
     grid-area: c;
-    border: 2px solid black;
 }
 
 img {
@@ -121,4 +120,12 @@ footer#socials img {
     height: 48px;
     width: 48px;
     padding-top: 24px;
+}
+
+/* Countdown styles */
+section#countdown {
+    font-family: "Magic_Cards";
+    font-size: 5.5em;
+    text-align: center;
+    padding-bottom: 5px;
 }

@@ -18,12 +18,11 @@ var x = setInterval(function(){
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     //Display result in element with class=countdown
-    document.getElementsByClassName("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
     //If the count down is finished, write "Skywind!"
     if (distance < 0) {
         clearInterval(x);
-        document.getElementsByClassName("countdown").innerHTML = "Skywind!";
+        document.getElementById("countdown").innerHTML = "Skywind!";
     }
-}
-)
+}, 1000);
